@@ -15,6 +15,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
     if(foundUser){
         if((foundUser.email == "admin@exampl.com" || foundUser.username == "admin") && foundUser.pass == "admin123"){
+            localStorage.setItem("loggedInUser", JSON.stringify(foundUser));
             window.location.href = "dashboard.html";
         }
         else{
