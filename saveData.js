@@ -28,5 +28,5 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
     localStorage.setItem("users", JSON.stringify(users));
   
     alert("User registered successfully!");
-
+    window.location.href = "index.html" ; 
 });
