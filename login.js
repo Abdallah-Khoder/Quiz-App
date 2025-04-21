@@ -15,7 +15,6 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
     if(foundUser){
         if((foundUser.email == "admin@exampl.com" || foundUser.username == "admin") && foundUser.pass == "admin123"){
-            alert("hello")
             window.location.href = "dashboard.html";
         }
         else{
